@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Таблицы</title>
+</head>
+<body align="center">
+	
+		<a href="../index.html">To main page</a>
+		<h1><font color="red">Таблицы</font></h1>	
+		<!-- table>(thead>tr>th(text)*3)+(tbody>tr*3>td*3)+(tfoot>tr>td*3) 
+
+			table[align="center" border="1" cellpadding="10" cellspacing="0" borderColor="darkpink" width="100%"]>(thead>tr>th*3)+(tbody>tr*3>td*3)+(tfoot>tr>td*3)
+
+			-->
+	<h1>Таблицы</h1>
+
+		
+		<table align="center" border="1" cellpadding="10" cellspacing="0" borderColor="darkpink" width="100%" ><!-- height -->
+			<thead>
+				<tr>
+					<th>someText</th>
+					<th>someText</th>
+					<th>someText</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>someText</td>
+					<td>someText</td>
+					<td>someText</td>
+				</tr>
+				<tr>
+					<td>someText</td>
+					<td>someText</td>
+					<td>someText</td>
+				</tr>
+				<tr>
+					<td>someText</td>
+					<td>someText</td>
+					<td>someText</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>someText</td>
+					<td>someText</td>
+					<td>someText</td>
+				</tr>
+			</tfoot>
+		</table>
+
+	<h2>Colspan</h2>
+		<table align="center" border="1" cellpadding="10" cellspacing="0" height = "500" width="100%">
+			<tbody >
+				<tr>
+					<td>someText</td>
+					<td>someText</td>
+					<td>someText</td>
+				</tr>
+				<tr id = "firstrow">
+					<td colspan = "2">SomeText</td>
+					
+					<td>SomeText</td>
+				</tr>
+				<tr id = "secondrow">
+					<td colspan="3">SomeText</td>
+					
+				</tr>
+				<trid id = thirdRow>
+					<td>SomeText</td>
+					<td colspan="2">SomeText</td>
+					
+				</tr>
+			</tbody>
+		</table>
+
+
+	<h2>Rowspan</h2>
+	<p align="right"><caption>  Таблица 1.1 </caption></p>
+			<table align="center" border="1" cellpadding="10" cellspacing="0" height = "500" width="100%">
+				<tbody>
+					<tr>
+						<td rowspan="2">1+4</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						
+						<td>5</td>
+						<td rowspan="2">6+9</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						
+					</tr>
+				</tbody>
+			</table>
+</body>
+</html>
